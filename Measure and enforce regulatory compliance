@@ -1,0 +1,33 @@
+### Regulatory Compliance in Microsoft Defender for Cloud
+
+#### How are Regulatory Compliance Standards Represented?
+
+**Industry standards, regulatory standards, and benchmarks** are represented in Defender for Cloud’s **regulatory compliance dashboard**. Each standard is an **initiative** defined in **Azure Policy**.
+
+
+Once a standard or benchmark is assigned to your selected scope, it will appear in your regulatory compliance dashboard with all associated compliance data mapped as assessments. You can also download summary reports for any assigned standards.
+
+Microsoft tracks regulatory standards and automatically enhances its coverage over time. When Microsoft releases new content for an initiative, it will appear in your dashboard as new policies mapped to the relevant controls within the standard.
+
+#### Available Regulatory Compliance Standards
+
+By default, every subscription in Defender for Cloud is assigned the **Azure Security Benchmark**. This Microsoft-authored set of guidelines provides **Azure-specific security and compliance best practices**, based on common compliance frameworks.
+
+Additional regulatory compliance standards available in Defender for Cloud include:
+
+- **PCI-DSS v3.2.1:2018**
+- **SOC TSP**
+- **NIST SP 800-53 R4**
+- **NIST SP 800 171 R2**
+- **UK OFFICIAL and UK NHS**
+- **Canada Federal PBMM**
+- **Azure CIS 1.1.0**
+- **HIPAA/HITRUST**
+- **SWIFT CSP CSCF v2020**
+- **ISO 27001:2013**
+- **New Zealand ISM Restricted**
+- **CMMC Level 3**
+- **Azure CIS 1.3.0**
+- **NIST SP 800-53 R5**
+- **FedRAMP High**
+- **FedRAMP Moderate**
