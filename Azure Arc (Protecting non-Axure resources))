@@ -1,0 +1,20 @@
+### Managing Complex Environments with Azure Arc
+
+Today, companies face challenges in controlling and governing increasingly complex environments. These environments span across data centers, multiple clouds, and the edge, with each environment and cloud offering its own set of management tools that must be learned and operated.
+
+**Azure Arc** simplifies governance and management by providing a consistent multi-cloud and on-premises management platform. With Azure Arc, you can:
+
+- Manage your entire environment through a single pane of glass by projecting your existing non-Azure, on-premises, or other-cloud resources into **Azure Resource Manager**.
+- Manage virtual machines, Kubernetes clusters, and databases as if they are running in Azure.
+- Use familiar Azure services and management capabilities, regardless of where your resources reside.
+- Continue using traditional ITOps while introducing DevOps practices to support new cloud-native patterns in your environment.
+- Configure **Custom Locations** as an abstraction layer on top of Azure Arc-enabled Kubernetes clusters, cluster connect, and cluster extensions.
+
+### Supported Resource Types Outside of Azure
+
+As of today, Azure Arc allows you to manage the following resource types hosted outside of Azure:
+
+- **Servers** - both physical and virtual machines running Windows or Linux.
+- **Kubernetes clusters** - supporting multiple Kubernetes distributions.
+- **Azure data services** - Azure SQL Managed Instance and PostgreSQL Hyperscale services.
+- **SQL Server** - enroll instances from any location with SQL Server on Azure Arc-enabled servers.
