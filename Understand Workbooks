@@ -1,0 +1,13 @@
+### Azure Monitor Workbooks in Microsoft Defender for Cloud
+
+**Azure Monitor Workbooks** provide a flexible canvas for data analysis and the creation of rich visual reports within the Azure portal. They allow you to tap into multiple data sources from across Azure and combine them into unified, interactive experiences.
+
+In **Microsoft Defender for Cloud**, you can access built-in workbooks to track your organization's security posture. You can also create custom workbooks to visualize a wide range of data from Defender for Cloud or other supported data sources.
+
+With the integrated Azure Workbooks functionality, Microsoft Defender for Cloud makes it easy to build custom, interactive workbooks. Defender for Cloud also includes a gallery with the following pre-built workbooks, ready for customization:
+
+- **Secure Score Over Time workbook** - Track your subscriptions' secure scores and changes to security recommendations for your resources.
+- **System Updates workbook** - View missing system updates categorized by resources, OS, severity, and more.
+- **Vulnerability Assessment Findings workbook** - View findings from vulnerability scans of your Azure resources.
+- **Compliance Over Time workbook** - Track a subscription's compliance with the regulatory or industry standards you have selected.
+- **Active Alerts workbook** - View active security alerts by severity, type, tag, **MITRE ATT&CK** tactics, and location.
