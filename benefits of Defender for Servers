@@ -1,0 +1,41 @@
+### Benefits of Microsoft Defender for Servers
+
+Microsoft Defender for Servers offers comprehensive threat detection and protection capabilities, including:
+
+- **Integrated License for Microsoft Defender for Endpoint**  
+  Defender for Servers includes **Microsoft Defender for Endpoint**, providing endpoint detection and response (EDR) capabilities. When enabled, Defender for Cloud gains access to Defender for Endpoint data related to vulnerabilities, installed software, and endpoint alerts. Alerts triggered by Defender for Endpoint are shown in Defender for Cloud, and you can pivot to the Defender for Endpoint console for detailed investigations.
+
+- **Vulnerability Assessment Tools for Machines**  
+  Defender for Servers includes a choice of tools for vulnerability discovery and management. From Defender for Cloud's settings, you can deploy these tools, with discovered vulnerabilities displayed as security recommendations.
+
+- **Microsoft Threat and Vulnerability Management**  
+  Defender for Endpoint identifies vulnerabilities and misconfigurations in real time, without the need for agents or periodic scans. Threat and vulnerability management prioritizes vulnerabilities based on the threat landscape, detections in your organization, and the business context.
+
+- **Vulnerability Scanner Powered by Qualys**  
+  The Qualys scanner identifies vulnerabilities in your Azure and hybrid virtual machines in real time. No Qualys license or account is required—everything is managed within Defender for Cloud.
+
+- **Just-in-Time (JIT) VM Access**  
+  JIT access locks down inbound traffic to virtual machines (VMs) by keeping remote access ports (e.g., RDP, SSH) closed until needed. This minimizes exposure to attacks and allows secure access when required.
+
+- **File Integrity Monitoring (FIM)**  
+  FIM detects file and registry changes that might indicate an attack. You can use FIM to validate the integrity of Windows files, registries, and Linux files, helping to ensure files remain unchanged or alert you to suspicious modifications.
+
+- **Adaptive Application Controls (AAC)**  
+  AAC is an intelligent solution for defining allowlists of known-safe applications. After configuration, you receive alerts when any unauthorized application runs on your machines.
+
+- **Adaptive Network Hardening (ANH)**  
+  ANH enhances the security of **network security groups (NSG)** by analyzing actual traffic patterns and providing recommendations to harden NSG rules. This machine learning-driven solution considers factors such as threat intelligence and trusted configurations.
+
+- **Docker Host Hardening**  
+  Defender for Cloud identifies unmanaged containers hosted on IaaS Linux VMs or Linux machines running Docker. It assesses container configurations against the **CIS Docker Benchmark** and alerts you if the containers don't meet the required controls.
+
+- **Fileless Attack Detection**  
+  Fileless attacks inject malicious payloads directly into memory, avoiding detection by traditional disk-based scanning techniques. Defender for Cloud uses automated memory forensic techniques to detect fileless attack toolkits, shellcode, and injected malicious executables. Detailed alerts with process metadata accelerate response times.
+
+- **Linux Auditd Alerts and Log Analytics Agent Integration (Linux Only)**  
+  The **auditd** system monitors system calls and records them for analysis. Defender for Cloud integrates **auditd** functionality with the **Log Analytics agent**, collecting and analyzing auditd events. This enables advanced analytics that detect malicious behaviors on Linux machines, similar to those available for Windows.
+
+- **Log Analytics Agent for Linux**  
+  The Log Analytics agent enriches and aggregates auditd records into events. Defender for Cloud continuously adds new analytics to detect suspicious processes, sign-in attempts, and kernel module loading on cloud and on-premises Linux machines.
+
+By leveraging these capabilities, Defender for Servers provides enhanced visibility, detection, and protection for your server environments.
