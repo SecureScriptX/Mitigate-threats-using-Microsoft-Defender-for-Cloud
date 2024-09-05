@@ -1,0 +1,58 @@
+## Microsoft Defender for Cloud - Data Collection Overview
+
+**Microsoft Defender for Cloud** collects data from your **Azure Virtual Machines (VMs), VM Scale Sets, IaaS containers, and non-Azure (including on-premises) machines to monitor for security vulnerabilities and threats.
+
+Data collection is required to provide visibility into:
+- Missing updates
+- Misconfigured OS security settings
+- Endpoint protection status
+- Health and threat protection
+
+**Note:** Data collection is only needed for compute resources such as VMs, VM scale sets, IaaS containers, and non-Azure machines. 
+
+### Data Collection Methods:
+
+- **Log Analytics Agent**:  
+  This agent reads various security-related configurations and event logs from the machine and transfers the data to your workspace for analysis. Examples of collected data include:
+  - Operating system type and version
+  - OS logs (e.g., Windows event logs)
+  - Running processes
+  - Machine name, IP addresses
+  - Logged in user information
+
+- **Security Extensions**:  
+  Tools like the **Azure Policy Add-on for Kubernetes can provide additional data to Security Center regarding specialized resource types.
+
+# Why Use Auto Provisioning?
+
+Any of the agents and extensions described can be installed manually. However, auto provisioning reduces management overhead by installing all required agents and extensions on existing and new machines to ensure faster security coverage for all supported resources.
+
+## How Does Auto Provisioning Work?
+
+Defender for Cloud's auto provisioning settings have a toggle for each type of supported extension. When you enable auto provisioning of an extension, you assign the appropriate **Deploy if not exists** policy to ensure that the extension is provisioned on all existing and future resources of that type.
+
+### Enable Auto Provisioning of the Log Analytics Agent
+
+When automatic provisioning is on for the Log Analytics agent, Defender for Cloud deploys the agent on all supported Azure VMs and any new ones created.
+
+#### Connect Azure VMs to the Default Workspace(s)
+
+Defender for Cloud creates a new resource group and default workspace in the same geolocation and connects the agent to that workspace. If a subscription contains VMs from multiple geolocations, Defender for Cloud creates multiple workspaces to ensure compliance with data privacy requirements.
+
+The naming convention for the workspace and resource group is:
+
+- **Workspace**: `DefaultWorkspace-[subscription-ID]-[geo]`
+- **Resource Group**: `DefaultResourceGroup-[geo]`
+
+Defender for Cloud automatically enables the Defender for Cloud solution(s) on the workspace per the pricing tier set for the subscription.
+
+#### Connect Azure VMs to a Different Workspace
+
+From the dropdown list, select the workspace to store collected data. The dropdown list includes all workspaces across all of your subscriptions. You can use this option to collect data from virtual machines running in different subscriptions and store it all in your selected workspace.
+
+If you already have an existing Log Analytics workspace, you might want to use the same workspace (requires read and write permissions on the workspace). This option is useful if you're using a centralized workspace in your organization and want to use it for security data collection. Learn more in [Manage access to log data and workspaces in Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/).
+
+If your selected workspace already has a Security or Defender for Cloud Free solution enabled, the pricing will be set automatically. If not, install a Defender for Cloud solution on the workspace.
+
+
+Selecting a data collection tier in Defender for Cloud only affects the storage of security events in your Log Analytics workspace. The Log Analytics agent will still collect and analyze the security events required for Defender for Cloud's threat protection, regardless of the level of security events you choose to store in your workspace. ]
