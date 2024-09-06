@@ -1,0 +1,41 @@
+
+### Microsoft Defender for Storage
+
+**Microsoft Defender for Storage** is an Azure-native security solution that detects unusual and potentially harmful attempts to access or exploit your storage accounts. It leverages advanced security AI and **Microsoft Threat Intelligence** to deliver contextual security alerts and recommendations.
+
+Security alerts are triggered by anomalies in activity. These alerts are integrated with **Defender for Cloud** and sent via email to subscription administrators, providing details on suspicious activity and guidance on how to investigate and remediate threats.
+
+#### Benefits of Microsoft Defender for Storage
+
+Microsoft Defender for Storage offers the following benefits:
+
+- **Azure-Native Security**  
+  With one-click enablement, Defender for Storage protects data stored in **Azure Blob**, **Azure Files**, and **Data Lakes**. As an Azure-native service, it provides centralized security for all data assets managed by Azure and integrates with other security services, such as **Microsoft Sentinel**.
+
+- **Rich Detection Suite**  
+  Powered by Microsoft Threat Intelligence, Defender for Storage detects the top storage threats, including anonymous access, compromised credentials, social engineering, privilege abuse, and malicious content.
+
+- **Response at Scale**  
+  Defender for Cloud's automation tools enable efficient prevention and response to identified threats. Learn more in [Automate responses to Defender for Cloud triggers](#).
+
+#### Types of Alerts in Microsoft Defender for Storage
+
+Security alerts are triggered by various suspicious activities, including:
+
+- **Suspicious Access Patterns**  
+  Examples include access from a **Tor exit node** or from an IP flagged by Microsoft Threat Intelligence as suspicious.
+
+- **Suspicious Activities**  
+  Examples include anomalous data extraction or unusual changes to access permissions.
+
+- **Uploads of Malicious Content**  
+  Alerts are triggered when files suspected to contain malware (based on **hash reputation analysis**) are uploaded or when phishing content is hosted.
+
+Each alert includes incident details and recommendations for investigation and remediation. Alerts can be exported to **Azure Sentinel**, third-party SIEMs, or other external tools.
+
+#### Hash Reputation Analysis for Malware
+
+Defender for Storage uses **hash reputation analysis**, supported by Microsoft Threat Intelligence, to determine if an uploaded file is suspicious. Rather than scanning files directly, it examines storage logs and compares the hashes of newly uploaded files with known hashes of viruses, trojans, spyware, and ransomware.
+
+When a file is suspected of containing malware, **Security Center** displays an alert and can email the storage owner for approval to delete the file. To enable automatic removal of files flagged by hash reputation analysis, set up a workflow automation to trigger on alerts containing "Potential malware uploaded to a storage account.”
+  
