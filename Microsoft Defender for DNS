@@ -1,0 +1,18 @@
+
+### Azure DNS and Microsoft Defender for DNS
+
+**Azure DNS** is a hosting service for DNS domains that provides name resolution using Microsoft's Azure infrastructure. By hosting your domains in Azure, you can manage your DNS records with the same credentials, APIs, tools, and billing as your other Azure services.
+
+**Microsoft Defender for DNS** adds an extra layer of protection to your cloud resources by:
+
+- Continuously monitoring all DNS queries from your Azure resources
+- Running advanced security analytics to alert you about suspicious activity
+
+#### Benefits of Microsoft Defender for DNS
+
+Defender for DNS protects against a variety of security issues, including:
+
+- **Data exfiltration** via DNS tunneling from your Azure resources
+- **Malware communication** with command and control (C&C) servers
+- Communication with **malicious domains** used for phishing or crypto mining
+- **DNS attacks** involving communication with malicious DNS resolvers
