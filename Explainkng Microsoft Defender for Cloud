@@ -1,0 +1,19 @@
+
+### Microsoft Defender for Cloud Features
+
+Microsoft Defender for Cloud covers two broad pillars of cloud security:
+
+#### 1. Cloud Security Posture Management (CSPM)
+
+In Defender for Cloud, posture management features provide:
+
+- **Visibility** - Helps you understand your current security situation.
+- **Hardening guidance** - Helps you efficiently and effectively improve your security posture.
+
+The central feature in Defender for Cloud for achieving these goals is the **secure score**. Defender for Cloud continuously assesses your resources, subscriptions, and organization for security issues. It aggregates all findings into a single score, allowing you to quickly understand your security status: the higher the score, the lower the risk.
+
+#### 2. Cloud Workload Protection (CWP)
+
+Defender for Cloud also provides security alerts powered by **Microsoft Threat Intelligence**, along with a range of advanced, intelligent protections for your workloads. These protections are provided through Microsoft Defender's enhanced security features, tailored to the specific types of resources in your subscriptions. 
+
+For example, you can enable **Microsoft Defender for Storage** to receive alerts about suspicious activities related to your Azure Storage accounts.
