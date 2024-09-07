@@ -1,0 +1,22 @@
+
+### Understanding Attack Intent with MITRE ATT&CK in Defender for Cloud
+
+Understanding the intent behind an attack can make investigation and reporting more straightforward. To support these efforts, Microsoft Defender for Cloud includes MITRE tactics with many alerts. The series of steps that describe the progression of a cyberattack, from reconnaissance to data exfiltration, is often referred to as the "kill chain."
+
+Defender for Cloud's supported kill chain intents are based on version 7 of the MITRE ATT&CK matrix, as outlined in the table below:
+
+| **Tactic**            | **Description**                                                                                                                                                                                                                      |
+|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **PreAttack**          | PreAttack could either be an attempt to access a resource regardless of malicious intent, or a failed attempt to gain access to a target system. This usually involves scanning the target system to identify entry points.         |
+| **InitialAccess**      | InitialAccess is when an attacker gains a foothold on the attacked resource, such as compute hosts, user accounts, or certificates. After this stage, the attacker often gains control over the resource.                           |
+| **Persistence**        | Persistence involves access or configuration changes that give a threat actor continuous presence on the system. This allows them to maintain access through system restarts, credential changes, or other interruptions.           |
+| **PrivilegeEscalation**| Privilege escalation occurs when an adversary gains higher permissions on a system or network. This could involve using specific tools or exploiting user accounts with higher-level permissions.                                   |
+| **DefenseEvasion**     | Defense evasion consists of techniques used by adversaries to avoid detection or subvert defenses. These techniques often overlap with others but are designed specifically to bypass security measures.                                 |
+| **CredentialAccess**   | Credential access involves techniques to obtain system, domain, or service credentials. Adversaries seek legitimate credentials to gain further access to networks and resources, often creating accounts for later use.            |
+| **Discovery**          | Discovery techniques allow adversaries to gather knowledge about the system and internal network. This post-compromise phase involves using native OS tools to align with their objectives and understand what they control.             |
+| **LateralMovement**    | Lateral movement involves techniques to access and control remote systems on a network or cloud without necessarily executing tools. It allows adversaries to move between systems, gather information, and access other credentials.  |
+| **Execution**          | Execution tactics involve running adversary-controlled code on local or remote systems. This step often works in conjunction with lateral movement to extend access to additional systems on the network.                               |
+| **Collection**         | Collection techniques involve identifying and gathering information, such as sensitive files, prior to exfiltration. This includes searching for valuable data across the system or network.                                            |
+| **Exfiltration**       | Exfiltration refers to removing files and information from a target network. This involves techniques to extract data, often from specific locations identified during the collection phase.                                            |
+| **CommandAndControl**  | Command and Control refers to how adversaries communicate with systems under their control in a target network. This step often involves establishing and maintaining remote access to compromised systems.                             |
+| **Impact**             | Impact techniques aim to reduce the availability or integrity of a system, service, or network. Common methods include ransomware, data manipulation, defacement, and other forms of disruption to business or operational processes.   |
