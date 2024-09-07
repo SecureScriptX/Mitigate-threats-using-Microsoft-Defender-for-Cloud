@@ -1,0 +1,36 @@
+
+### Microsoft Defender for Cloud Overview
+
+**Defender for Cloud** is a tool for security posture management and threat protection. It strengthens the security posture of your cloud resources and, with integrated Microsoft Defender plans, it protects workloads running in **Azure**, **hybrid**, and other cloud platforms.
+
+Defender for Cloud provides the necessary tools to harden your resources, track your security posture, protect against cyber attacks, and streamline security management. Since it’s natively integrated, deployment is simple with **auto provisioning**, enabling security for your resources by default.
+
+Defender for Cloud addresses three critical needs as you manage security for cloud and on-premises resources:
+
+- **Continuously Assess** – Understand your current security posture.
+- **Secure** – Harden all connected resources and services.
+- **Defend** – Detect and resolve threats to your resources and services.
+
+### Key Features of Microsoft Defender for Cloud
+
+- **Secure Score**: A single score that represents your security situation at a glance. The higher the score, the lower your identified risk level.
+  
+- **Security Recommendations**: Customized and prioritized hardening tasks to improve your security posture. Each recommendation includes detailed remediation steps, and for many, Defender for Cloud offers an automated "Fix" button for quick implementation.
+
+- **Security Alerts**: With enhanced security features enabled, Defender for Cloud detects threats to your resources and workloads. These alerts are visible in the Azure portal, and Defender for Cloud can send notifications via email to relevant personnel. Alerts can also be streamed to **SIEM**, **SOAR**, or **IT Service Management** solutions as required.
+
+### Protect PaaS
+
+**Defender for Cloud** helps detect threats across **Azure PaaS** services. You can monitor threats targeting Azure services like **Azure App Service**, **Azure SQL**, **Azure Storage Account**, and other data services. Additionally, the native integration with **Microsoft Defender for Cloud Apps'** **User and Entity Behavioral Analytics (UEBA)** enables anomaly detection on your Azure activity logs.
+
+### Block Brute Force Attacks
+
+Defender for Cloud reduces exposure to brute force attacks by limiting access to virtual machine ports through **just-in-time VM access**. This feature helps harden your network by preventing unnecessary access. You can set secure access policies for selected ports, authorizing only specific users, IP address ranges, or IP addresses, and restricting access to a limited time window.
+
+### Protect Data Services
+
+Defender for Cloud includes tools that help automatically classify your data in **Azure SQL**. It also provides assessments for potential vulnerabilities in **Azure SQL** and **Azure Storage** services, along with recommendations on how to mitigate those vulnerabilities.
+
+### Get Secure Faster
+
+With **native Azure integration** (including **Azure Policy** and **Azure Monitor logs**) and seamless integration with other Microsoft security solutions like **Microsoft Defender for Cloud Apps** and **Microsoft Defender for Endpoint**, Defender for Cloud ensures a comprehensive and simple security solution. 
